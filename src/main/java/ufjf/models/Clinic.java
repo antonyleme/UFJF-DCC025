@@ -10,24 +10,34 @@ import java.util.ArrayList;
 
 /**
  *
- * @author anton
+ * @author Antony Leme Novais Ferreira - 202065009A
  */
 public class Clinic {
 
     private String name;
     private String neighborhood;
     private String street;
-    private String number;
-    private Manager manager;
-    private ArrayList<Nurse> nurses = new ArrayList<>();
+    private City city;
+    private int number;
 
-    public Clinic(String name, String neighborhood, String street, String number, Manager manager) {
+    public Clinic(String name, String neighborhood, String street, int number, City city, Manager manager) {
         this.name = name;
         this.neighborhood = neighborhood;
         this.street = street;
         this.number = number;
+        this.city = city;
         this.manager = manager;
     }
+
+    public City getCity() {
+        return city;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
+    }
+    private Manager manager;
+    private ArrayList<Nurse> nurses = new ArrayList<>();
 
     public String getName() {
         return name;
@@ -51,14 +61,6 @@ public class Clinic {
 
     public void setStreet(String street) {
         this.street = street;
-    }
-
-    public String getNumber() {
-        return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
     }
 
     public Manager getManager() {

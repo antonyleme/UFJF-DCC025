@@ -10,25 +10,41 @@ import java.util.Date;
 
 /**
  *
- * @author anton
+ * @author Antony Leme Novais Ferreira - 202065009A
  */
 public class Dose {
-    private String vaccineName;
+    private Vaccine vaccine;
     private Date date;
     private boolean applyed;
 
-    public Dose(String vaccineName, Date date, boolean applyed) {
-        this.vaccineName = vaccineName;
+    public Dose(Vaccine vaccine, Date date, boolean applyed) {
+        this.vaccine = vaccine;
         this.date = date;
         this.applyed = applyed;
     }
 
-    public String getVaccineName() {
-        return vaccineName;
+    public Vaccine getVaccine() {
+        return vaccine;
+    }
+
+    public void setVaccine(Vaccine vaccine) {
+        this.vaccine = vaccine;
     }
 
     public Date getDate() {
         return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public boolean isApplyed() {
+        return applyed;
+    }
+
+    public void setApplyed(boolean applyed) {
+        this.applyed = applyed;
     }
     
     

@@ -10,7 +10,7 @@ import ufjf.controllers.LoginController;
 
 /**
  *
- * @author anton
+ * @author Antony Leme Novais Ferreira - 202065009A
  */
 public class Login extends javax.swing.JFrame {
     

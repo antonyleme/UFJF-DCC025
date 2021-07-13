@@ -8,17 +8,18 @@ package ufjf.controllers;
 
 import java.util.ArrayList;
 import ufjf.aplicacao.App;
+import ufjf.models.City;
 import ufjf.models.Clinic;
 import ufjf.models.Manager;
 
 /**
  *
- * @author anton
+ * @author Antony Leme Novais Ferreira - 202065009A
  */
 public class ClinicController {
 
-    public Clinic create(String name, String neighborhood, String street, String number, Manager manager){
-        Clinic clinic = new Clinic(name, neighborhood, street, number, manager);
+    public Clinic create(String name, String neighborhood, String street, City city, int number, Manager manager){
+        Clinic clinic = new Clinic(name, neighborhood, street, number, city, manager);
         
         return clinic; 
     }

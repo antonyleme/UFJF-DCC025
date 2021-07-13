@@ -6,10 +6,27 @@
 
 package ufjf.controllers;
 
+import java.util.ArrayList;
+import ufjf.models.Secretary;
+
 /**
  *
- * @author anton
+ * @author Antony Leme Novais Ferreira - 202065009A
  */
 public class SecretaryController {
-
+    public Secretary create(Secretary secretary){
+        return secretary;
+    }
+    
+    public Secretary update(Secretary secretary){
+        return secretary;
+    }
+    
+    public void remove(){
+    }
+    
+    public ArrayList list(){
+        ArrayList<Secretary> list = new ArrayList<>();
+        return list;
+    }
 }

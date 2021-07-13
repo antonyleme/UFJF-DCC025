@@ -9,7 +9,7 @@ import ufjf.views.Vaccine;
 import ufjf.views.Login;
 import ufjf.views.Manager.ManagerHome;
 import ufjf.views.Manager.Nurses;
-import ufjf.views.Manager.PeopleVaccined;
+import ufjf.views.Manager.ManagerHome;
 import ufjf.views.Nurse.NurseHome;
 import ufjf.views.Register;
 import ufjf.views.Secretary.Clinics;
@@ -19,7 +19,7 @@ import ufjf.views.Secretary.Vaccines;
 
 /**
  *
- * @author anton
+ * @author Antony Leme Novais Ferreira - 202065009A
  */
 public class Router {
     private final Login login;
@@ -27,7 +27,7 @@ public class Router {
     private final Vaccine vaccine;
     private final ManagerHome managerHome;
     private final Nurses nurses;
-    private final PeopleVaccined peopleVaccined;
+    private final ManagerHome peopleVaccined;
     private final NurseHome nurseHome;
     private final Clinics clinics;
     private final Managers managers;
@@ -40,7 +40,7 @@ public class Router {
         vaccine = new Vaccine();
         managerHome = new ManagerHome();
         nurses = new Nurses();
-        peopleVaccined = new PeopleVaccined();
+        peopleVaccined = new ManagerHome();
         nurseHome = new NurseHome();
         clinics = new Clinics();
         managers = new Managers();

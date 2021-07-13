@@ -11,7 +11,7 @@ import ufjf.models.Clinic;
 
 /**
  *
- * @author anton
+ * @author Antony Leme Novais Ferreira - 202065009A
  */
 public class App {
     

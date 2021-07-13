@@ -9,7 +9,7 @@ import ufjf.aplicacao.App;
 
 /**
  *
- * @author anton
+ * @author Antony Leme Novais Ferreira - 202065009A
  */
 public class Managers extends javax.swing.JFrame {
 
@@ -34,6 +34,10 @@ public class Managers extends javax.swing.JFrame {
         addRegisterButton = new javax.swing.JButton();
         menuBar = new javax.swing.JMenuBar();
         inicioMenuItem = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu3 = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
+        jMenu5 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         logoutMenuItem = new javax.swing.JMenuItem();
 
@@ -74,6 +78,18 @@ public class Managers extends javax.swing.JFrame {
             }
         });
         menuBar.add(inicioMenuItem);
+
+        jMenu1.setText("Cidade");
+        menuBar.add(jMenu1);
+
+        jMenu3.setText("Pontos");
+        menuBar.add(jMenu3);
+
+        jMenu4.setText("Vacinas");
+        menuBar.add(jMenu4);
+
+        jMenu5.setText("Gestores");
+        menuBar.add(jMenu5);
 
         jMenu2.setText("Opções");
         jMenu2.setToolTipText("");
@@ -117,6 +133,10 @@ public class Managers extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void addRegisterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addRegisterButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addRegisterButtonActionPerformed
+
     private void inicioMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inicioMenuItemActionPerformed
         App.router.navigate("home");
     }//GEN-LAST:event_inicioMenuItemActionPerformed
@@ -124,10 +144,6 @@ public class Managers extends javax.swing.JFrame {
     private void logoutMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutMenuItemActionPerformed
         App.router.navigate("login");
     }//GEN-LAST:event_logoutMenuItemActionPerformed
-
-    private void addRegisterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addRegisterButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addRegisterButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -167,7 +183,11 @@ public class Managers extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addRegisterButton;
     private javax.swing.JMenu inicioMenuItem;
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JMenuItem logoutMenuItem;

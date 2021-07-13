@@ -8,8 +8,21 @@ package ufjf.models;
 
 /**
  *
- * @author anton
+ * @author Antony Leme Novais Ferreira - 202065009A
  */
 public class Manager extends Person {
+    private Clinic clinic;
 
+    public Clinic getClinic() {
+        return clinic;
+    }
+
+    public void setClinic(Clinic clinic) {
+        this.clinic = clinic;
+    }
+
+    public Manager(Clinic clinic, String name, String cpf, String birthday, User user, String neighborhood, String street, City city, int number) {
+        super(name, cpf, birthday, user, neighborhood, street, city, number);
+        this.clinic = clinic;
+    }
 }

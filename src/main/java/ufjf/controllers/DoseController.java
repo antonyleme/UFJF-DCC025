@@ -6,10 +6,27 @@
 
 package ufjf.controllers;
 
+import java.util.ArrayList;
+import ufjf.models.Dose;
+
 /**
  *
- * @author anton
+ * @author Antony Leme Novais Ferreira - 202065009A
  */
 public class DoseController {
-
+    public Dose create(Dose dose){
+        return dose;
+    }
+    
+    public Dose update(Dose dose){
+        return dose;
+    }
+    
+    public void remove(){
+    }
+    
+    public ArrayList list(){
+        ArrayList<Dose> list = new ArrayList<>();
+        return list;
+    }
 }
